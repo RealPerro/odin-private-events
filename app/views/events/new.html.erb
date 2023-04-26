@@ -1,0 +1,17 @@
+<h1>Aquí nuevos eventos</h1>
+
+<%= form_with(model: @event) do |e| %>
+  <%= e.label :name %>
+  <%= e.text_field :name %>
+
+  <%= e.label  :date %>
+  <%= e.text_field :date %>
+
+  <%= e.label :address %>
+  <%= e.text_field :address %>
+
+  <%= e.label  :description %>
+  <%= e.text_field :description %>
+
+  <%= e.submit %>
+<% end %>

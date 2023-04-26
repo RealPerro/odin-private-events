@@ -3,7 +3,10 @@
 <ul>
   <% @events.each do |e| %>
     <li>
-        <h3> <% link_to event.name, event_path(event) %> </h3>
+        <h3> <% e.name %> </h3>
+        <h3> <% e.address %> </h3>
+        <h3> <% e.description %> </h3>
+        <h3> <% e.date %> </h3>
     </li>
   <% end %>
 </ul>
