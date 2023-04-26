@@ -1,0 +1,9 @@
+<h1>Eventos Maravillosos</h1>
+
+<ul>
+  <% @events.each do |e| %>
+    <li>
+        <h3> <% link_to event.name, event_path(event) %> </h3>
+    </li>
+  <% end %>
+</ul>
