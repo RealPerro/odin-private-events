@@ -1,0 +1,8 @@
+<h1><%= @user.email %> has created these events:</h1>
+
+<% @created.each do |e| %>
+  <h2><%= e.name %></h2>
+  <h6>Dónde: <%= e.address %></h6>
+  <h6>Cuándo: <%= e.date %></h6>
+  <h6>Detalles: <%= e.description %></h6>
+<% end %>

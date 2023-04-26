@@ -1,12 +1,12 @@
 <h1>Eventos Maravillosos</h1>
-
+<h3>Welcome, <%= current_user.email =%></h3>
 <ul>
   <% @events.each do |e| %>
     <li>
-        <h3> <% e.name %> </h3>
-        <h3> <% e.address %> </h3>
-        <h3> <% e.description %> </h3>
-        <h3> <% e.date %> </h3>
+        <h3> <%= link_to e.name, event_path(e.id) %> </h3>
+        <h3> <%= e.address %> </h3>
+        <h3> <%= e.description %> </h3>
+        <h3> <%= e.date %> </h3>
     </li>
   <% end %>
 </ul>
